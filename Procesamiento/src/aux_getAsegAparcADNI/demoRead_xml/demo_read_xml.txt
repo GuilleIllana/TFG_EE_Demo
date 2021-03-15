@@ -1,0 +1,1 @@
+[sex,Age,MMSE,GDS,CDR,FAQ,diagnose,ID,APOE_A1,APOE_A2,imageUID,ADQDATE]=read_xml2struct('test.xml');

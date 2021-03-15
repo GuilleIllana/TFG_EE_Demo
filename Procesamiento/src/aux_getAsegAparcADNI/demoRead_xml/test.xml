@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<idaxs xmlns="http://ida.loni.usc.edu" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="/xsds/idaxs_2_0.xsd">
+<project xmlns="">
+ <projectIdentifier>ADNI</projectIdentifier>
+ <projectDescription>Alzheimer&#039;s Disease Neuroimaging Initiative</projectDescription>
+ <siteKey>003</siteKey>
+ <subject>
+  <subjectIdentifier>003_S_0908</subjectIdentifier>
+  <researchGroup>MCI</researchGroup>
+  <subjectSex>F</subjectSex>
+  <subjectInfo item="APOE A1">2</subjectInfo>
+  <subjectInfo item="APOE A2">3</subjectInfo>
+  <visit>
+   <visitIdentifier>ADNI2 Year 2 Visit</visitIdentifier>
+   <assessment name="MMSE">
+    <component name="MMSE Total Score">
+     <assessmentScore attribute="MMSCORE">28.0</assessmentScore>
+    </component>
+   </assessment>
+   <assessment name="GDSCALE">
+    <component name="GDS Total Score">
+     <assessmentScore attribute="GDTOTAL">2.0</assessmentScore>
+    </component>
+   </assessment>
+   <assessment name="CDR">
+    <component name="CDR Total Score">
+     <assessmentScore attribute="CDGLOBAL">0.5</assessmentScore>
+    </component>
+   </assessment>
+   <assessment name="Functional Assessment Questionnaire">
+    <component name="FAQ Total score">
+     <assessmentScore attribute="FAQTOTAL">6.0</assessmentScore>
+    </component>
+   </assessment>
+  </visit>
+  <study>
+   <studyIdentifier>63186</studyIdentifier>
+   <subjectAge>70.3151</subjectAge>
+   <ageQualifier>Y</ageQualifier>
+   <weightKg>74.3891</weightKg>
+   <postMortem>F</postMortem>
+   <series>
+    <seriesIdentifier>210038</seriesIdentifier>
+    <modality>DTI</modality>
+    <dateAcquired>2014-01-06</dateAcquired>
+    <seriesLevelMeta>
+     <annotation>
+      <text> Images are registered to a downsampled version of the Colins brain. The Colin27 brain is zeropadded to have a cubic isotropic image size  (220x220x220 1mm^3) and downsampled (110x110x110 2mm^3) to be more similar to the DWI resolution &#10;&#9;       A corrected gradient table (rotated_gradient_table) is calculated from multiplying vectors in original table.*xfm file from linearly registering the average b0 from the DWI images to the structural T1-weighted scan&#10;&#9;&#9;   The JHU &quot;Eve&quot; atlas is registered to the subject and average values in each region within the FOV are reported&#10;&#9;   </text>
+     </annotation>
+     <derivedProduct>
+      <imageUID>421013</imageUID>
+      <processedDataLabel>corrected AD image</processedDataLabel>
+      <imageType>image volume</imageType>
+      <tissue>All</tissue>
+      <hemisphere>Both</hemisphere>
+      <anatomicStructure>Brain</anatomicStructure>
+      <registration>Colin27</registration>
+      <relatedImage>
+       <imageUID>420890</imageUID>
+       <relation>derived from</relation>
+      </relatedImage>
+      <provenanceDetail>
+       <step>1</step>
+       <process>Diffusion Property Computation</process>
+       <package>FSL</package>
+       <program>dtifit</program>
+       <programVersion>FSL4.1</programVersion>
+       <programParams> -k I420890 -r rotated_gradient_table -m EPI_corrected_b0 -b ADNI2_Bvals.txt --save_tensor</programParams>
+       <timestamp>0000-00-00T00:00:00</timestamp>
+       <platform>linux</platform>
+       <operatingSystem>Solaris 10</operatingSystem>
+      </provenanceDetail>
+      <creationDate>0000-00-00</creationDate>
+      <processingInstitution>UCLA</processingInstitution>
+     </derivedProduct>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0018</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Genu of Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Both</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0022</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Body of Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Both</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0019</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Splenium of Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Both</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.002</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Both</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.003</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Fornix</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Both</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0032</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Fornix</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0018</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Genu of Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0023</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Body of Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0022</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Splenium of Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0013</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Corticospinal Tracts</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0011</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Medial Lemniscus of Pons</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Inferior Cerebellar Peduncle</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0014</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Superior Cerebellar Peduncle</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0015</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Cerebral Peduncle</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Anterior Limb of Internal Capsule</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Posterior Limb of Internal Capsule</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0013</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Retrolenticular Part of Internal Capsule</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0013</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Anterior Corona Radiata</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0013</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Superior Corona Radiata</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0014</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Posterior Corona Radiata</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0015</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Posterior Thalamic Radiation</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0014</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Sagittal Stratum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0011</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>External Capsule</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Cingulate Part of Cingulum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Hippocampal Part of Cingulum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0017</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Stria Terminalis</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.001</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Superior Longitudinal Fasciculus</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0018</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Superior Fronto-Occipital Fasciculus</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Inferior Fronto-Occipital Fasciculus</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Uncinate Fasciculus of Pons</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0027</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Tapetum of Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Left</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0027</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Fornix</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0018</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Genu of Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0022</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Body of Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0017</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Splenium of Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Corticospinal Tracts</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Medial Lemniscus of Pons</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Inferior Cerebellar Peduncle</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0015</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Superior Cerebellar Peduncle</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0016</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Cerebral Peduncle</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Anterior Limb of Internal Capsule</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Posterior Limb of Internal Capsule</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0013</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Retrolenticular Part of Internal Capsule</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Anterior Corona Radiata</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Superior Corona Radiata</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0013</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Posterior Corona Radiata</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0013</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Posterior Thalamic Radiation</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0014</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Sagittal Stratum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0011</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>External Capsule</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0011</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Cingulate Part of Cingulum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0012</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Hippocampal Part of Cingulum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0016</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Stria Terminalis</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.001</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Superior Longitudinal Fasciculus</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0019</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Superior Fronto-Occipital Fasciculus</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0011</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Inferior Fronto-Occipital Fasciculus</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.001</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Uncinate Fasciculus of Pons</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <derivedMeasure>
+      <measureDetail>
+       <measureName>Axial Diffusivity</measureName>
+       <measureValue>0.0021</measureValue>
+       <measureUnits>unitless</measureUnits>
+      </measureDetail>
+      <measuredStructure>Tapetum of Corpus Callosum</measuredStructure>
+      <measuredTissueType>White</measuredTissueType>
+      <measuredHemisphere>Right</measuredHemisphere>
+     </derivedMeasure>
+     <relatedImageDetail>
+      <processedRelatedImage>
+       <derivedProduct>
+        <imageUID>420890</imageUID>
+        <processedDataLabel>EPI current corrected image</processedDataLabel>
+        <imageType>image volume</imageType>
+        <tissue>All</tissue>
+        <hemisphere>Both</hemisphere>
+        <anatomicStructure>Brain</anatomicStructure>
+        <registration>Colin27</registration>
+        <relatedImage>
+         <imageUID>404532</imageUID>
+         <relation>derived from</relation>
+        </relatedImage>
+        <relatedImage>
+         <imageUID>404534</imageUID>
+         <relation>derived from</relation>
+        </relatedImage>
+        <provenanceDetail>
+         <step>1</step>
+         <process>Mask</process>
+         <package>FSL</package>
+         <program>bet2</program>
+         <programVersion>FSL4.1</programVersion>
+         <programParams> -f 0.3  -m</programParams>
+         <timestamp>0000-00-00T00:00:00</timestamp>
+         <platform>linux</platform>
+         <operatingSystem>Solaris 10</operatingSystem>
+        </provenanceDetail>
+        <provenanceDetail>
+         <step>2</step>
+         <process>Spatial Normalization</process>
+         <package>FSL</package>
+         <program>flirt</program>
+         <programVersion>FSL4.1</programVersion>
+         <programParams> -dof 9 -ref I404534</programParams>
+         <timestamp>0000-00-00T00:00:00</timestamp>
+         <platform>linux</platform>
+         <operatingSystem>Solaris 10</operatingSystem>
+        </provenanceDetail>
+        <provenanceDetail>
+         <step>3</step>
+         <process>Fit Diffusion Tensor Model</process>
+         <package>FSL</package>
+         <program>dtifit</program>
+         <programVersion>FSL4.1</programVersion>
+         <programParams> -k linearly_registered_DWI_from_step2 -m mask_from_step1 -r rotated_gradient_table -b ADNI2_Bvals.txt</programParams>
+         <timestamp>0000-00-00T00:00:00</timestamp>
+         <platform>linux</platform>
+         <operatingSystem>Solaris 10</operatingSystem>
+        </provenanceDetail>
+        <provenanceDetail>
+         <step>4</step>
+         <process>Calculate Coregistration</process>
+         <program>3DMI</program>
+         <programParams> -in average_b0_from_step3 -ref I404534 -dim 110 110 110</programParams>
+         <timestamp>0000-00-00T00:00:00</timestamp>
+         <platform>linux</platform>
+         <operatingSystem>Solaris 10</operatingSystem>
+        </provenanceDetail>
+        <provenanceDetail>
+         <step>5</step>
+         <process>Apply Coregistration</process>
+         <program>3DMI</program>
+         <timestamp>0000-00-00T00:00:00</timestamp>
+         <platform>linux</platform>
+         <operatingSystem>Solaris 10</operatingSystem>
+        </provenanceDetail>
+        <creationDate>0000-00-00</creationDate>
+        <processingInstitution>UCLA</processingInstitution>
+       </derivedProduct>
+      </processedRelatedImage>
+     </relatedImageDetail>
+    </seriesLevelMeta>
+   </series>
+  </study>
+ </subject>
+</project>
+</idaxs>
